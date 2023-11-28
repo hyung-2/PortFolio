@@ -1,27 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* body{
+  background-color: #333;
+} */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.box{
+  /* border: 1px solid black; */
+  background-color: lavender;
+  /* padding: 1rem; */
+  margin: 10rem auto;
+  width: 60%;
+  max-width: 900px;
+  height: 50vh;
+  box-shadow: 0 0 3rem 5px rgba(0, 0, 0, 0.3);
+
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;  
+}
+.box:hover{
+  box-shadow: 0 0 3rem 5px rgba(0, 0, 0, 0.7);
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.menu{
+  width: 30%;
+  border: 1px solid blue;
+  padding: 1rem;
+  margin: 1rem
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.menu-item{
+  margin: .5rem;
+  padding: .5rem;
+}
+.menu-item > * {
+  text-decoration: none;
+  /* color: #eee; */
+  border: 1px solid black;
+  padding: .5rem;
+}
+
+.content{
+  width: 60%; height: 100%;
+  border: 1px solid pink;
+  margin: 1rem;
+}
+
+.IconsBox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.IconTitle{
+  margin: .5rem;
+}
+.iconBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+}
+.iconTitle{
+  font-size: .7rem;
+  text-align: center;
+  margin-top: .3rem;
+
 }
