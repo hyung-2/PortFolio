@@ -9,7 +9,7 @@ async function skills(props){
 
   return(
     <>
-      <h2>My skills</h2>
+      <h2 className="pageTitle">My skills</h2>
       <h3 className="IconTitle">Front-end</h3>
       <div className="IconsBox">
           {frontIcons.map(icon => {
