@@ -1,4 +1,4 @@
-import Link from 'next/link'
+
 import './globals.css'
 import Menus from './Menus'
 
@@ -10,6 +10,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  console.log(children)
   return (
     <html>
       <body>

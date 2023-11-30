@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'EASTARJET-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font{
+  font-family: 'EASTARJET-Medium';
+}
 /* body{
   background-color: #333;
 } */
@@ -73,10 +83,13 @@
   width: 100%; 
   height: 100%;
   cursor: pointer;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%); */
+}
+.link{
+  width: 100%; height: 100%;
 }
 .imgBox{
   width: 30rem;
@@ -103,7 +116,6 @@
   margin-bottom: 8rem;
 }
 /* .intro{
-  line-height: 2.5rem;
 } */
 /* .name{
   font-size: 1.5rem;
@@ -117,7 +129,9 @@
   margin: .5rem;
   margin-left: .5rem;
 }
-
+.contact-item > * {
+  text-decoration: none;
+}
 
 /* skills page  */
 .IconsBox{
@@ -158,6 +172,7 @@
 .project-box{
   /* border: 1px solid black; */
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .project-box2{
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
@@ -167,12 +182,41 @@
 }
 .projectImgBox{
   width: 100%; height: 100%;
+  position: relative;
+  transition: 1s ;
 }
 .projectImgBox2{
   width: 30%; height: 100%;
+  position: relative;
 }
 .projectImgBox > img, .projectImgBox2 > img{
   width: 100%; height: 100%;
+}
+.projectHover{
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border: 1px solid black; */
+  position: absolute;
+  /* z-index: 2; */
+  width: 100%; height: 100%;
+  transition: .3s ;
+  animation: ani ease-in-out;
+  opacity: 0;
+}
+.projectHover:hover{
+  opacity: 1;
+}
+
+@keyframes ani{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projectImgBoxHover{
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* project~ page */
@@ -188,20 +232,62 @@
 .projectContent{
   display: flex;
   /* flex-direction: column; */
-
 }
 .projectContent > div {
   margin: 1rem;
+}
+.project-subtitle{
+  margin-top: 0;
 }
 /* .descriptionBox{
   
 } */
 .viewImgBox{
-  width: 30rem;
+  width: 25rem;
 }
 .viewImgBox2{
   width: 12rem;
 }
 .viewImgBox > img, .viewImgBox2 > img{
   width: 100%; height: 100%;
+}
+.badges > img{
+  margin-right: .5rem;
+}
+
+/* Button.js */
+.linkBox{
+  /* margin-top: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 1rem; */
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.btn{
+  padding: .3rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+  margin-right: .5rem;
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid rgb(197, 197, 247); */
+  background-color: #aaa;
+  cursor: pointer;
+}
+.btn:hover{
+  /* border: 1px solid rgb(197, 197, 247); */
+  /* background-color: rgb(232, 232, 255); */
+  background-color: rgb(197, 197, 247);
+}
+.btn > *{
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

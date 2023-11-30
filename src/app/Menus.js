@@ -24,10 +24,10 @@ export default function Menus(){
     <>
       <div className='line'></div>
       <div className='menu'>
-        <div className='menu-item'><Link href='/'>홈</Link></div>
-        <div className='menu-item'><Link href={`/about`}>about</Link></div>
-        <div className='menu-item'><Link href={`/skills`}>skills</Link></div>
-        <div className='menu-item'><Link href={`/project`}>project</Link></div>
+        <div className='menu-item font'><Link href='/'>홈</Link></div>
+        <div className='menu-item font'><Link href={`/about`}>about</Link></div>
+        <div className='menu-item font'><Link href={`/skills`}>skills</Link></div>
+        <div className='menu-item font'><Link href={`/project`}>project</Link></div>
       </div>
     </>
   )

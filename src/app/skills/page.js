@@ -9,8 +9,8 @@ async function skills(props){
 
   return(
     <>
-      <h2 className="pageTitle">My skills</h2>
-      <h3 className="IconTitle">Front-end</h3>
+      <h2 className="pageTitle font">My skills</h2>
+      <h3 className="IconTitle font">Front-end</h3>
       <div className="IconsBox">
           {frontIcons.map(icon => {
             return(
@@ -19,7 +19,7 @@ async function skills(props){
                 <title>{icon.title}</title>
                 <path style={{fill:`${icon.color}`}} d={icon.path} />
               </svg>
-              <div className="iconTitle">{icon.title}</div>
+              <div className="iconTitle font">{icon.title}</div>
               </div>
             )
           })}
@@ -33,7 +33,7 @@ async function skills(props){
                 <title>{icon.title}</title>
                 <path style={{fill:`${icon.color}`}} d={icon.path} />
               </svg>
-              <div className="iconTitle">{icon.title}</div>
+              <div className="iconTitle font">{icon.title}</div>
               </div>
             )
           })}
