@@ -1,9 +1,16 @@
 import Back from '../../Back'
-import Button from '../../Button'
+import ImgBox from '../../ImgBox'
+
+import img0 from '/public/project3_thumbnail.png'
+import img1 from '/public/project3_1.png'
+import img2 from '/public/project3_2.png'
+import img3 from '/public/project3_3.png'
+import img4 from '/public/project3_4.png'
 
 
 export default function page(){
-  const github = 'https://github.com/hyung-2/RNproject'
+  const imgs = [img0, img1, img2, img3, img4]
+
   return(
     <>
     <div className='projectDetailsBox'>
@@ -13,8 +20,11 @@ export default function page(){
       </div>
       <div className='projectContent'>
         <div className='viewBox'>
-          <div className='viewImgBox2'>
-            <img src='/project3_thumbnail.png'/>
+          <ImgBox imgs={imgs} row='vertical'/>
+          <div className='badges'>
+          <img src="https://img.shields.io/badge/ReactNative-61DAFB?style=flat&logo=react&logoColor=white"/>
+            <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white"/>
+            <img src="https://img.shields.io/badge/node.js-339933?style=flat&logo=nodedotjs&logoColor=white"/>
           </div>
         </div>
         <div className='descriptionBox'>
@@ -26,7 +36,6 @@ export default function page(){
           </p>
         </div>
       </div>
-          <Button github={github}/>
     </div>
     </>
   )
