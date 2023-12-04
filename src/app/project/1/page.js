@@ -17,7 +17,7 @@ export default function page(){
     <div className='projectDetailsBox'>
       <div className='flex'>
         <Back/>
-        <h3 className='projectTitle'>재잘재잘</h3>
+        <h3 className='projectTitle font'>재잘재잘</h3>
       </div>
       <div className='projectContent'>
         <div className='viewBox'>

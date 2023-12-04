@@ -10,7 +10,7 @@ function about(props){
       <h2 className="pageTitle font">About me</h2>
       <div className="about">
         <div className="photobox">
-          <h2>사진</h2>
+          <img src="/profile.png"/>
         </div>
         <div className="contentBox">
           <div className="introBox">
@@ -21,7 +21,7 @@ function about(props){
           <div className="contact">
             <div className="flex">
               <AiFillMail/>
-              <p className="contact-item font">이메일: <a href="mailto:nh_0221@naver.com" target='_blank'>nh_0221@naver.com</a></p>
+              <p className="contact-item font">이메일: <a href="mailto:nh_0221@naver.com" target='_blank' title="메일 보내기">nh_0221@naver.com</a></p>
             </div>
             <div className="flex">
               <AiFillGithub/>

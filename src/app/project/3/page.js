@@ -32,8 +32,8 @@ export default function page(){
           <div className='description'>
             <div className='aboutProject'>
               <h3 className='des-title font'>프로젝트소개</h3>
-              <div className='font'>- 리액트 네이티브를 활용한 세번째 프로젝트</div>
-              <div className='font'>- 친구와 일정 공유, 채팅, 알람설정</div>
+              <div className='font'>- 리액트 네이티브를 활용한 프로젝트</div>
+              <div className='font'>- 친구와 일정 공유, 채팅, 알람설정 기능 탑재</div>
               <div className='font'>- 캘린더 부분 담당</div>
             </div>
             <div>

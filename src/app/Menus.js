@@ -13,7 +13,7 @@ export default function Menus(){
   useEffect(() => {
     const menus = document.querySelectorAll('.menu-item')
     menus.forEach(menu => {
-      if(`/${menu.innerText}` == pathName){
+      if(`/${menu.innerText}` == pathName.toUpperCase()){
         menu.classList.add('pick')
       }else{
         menu.classList.remove('pick')
@@ -21,13 +21,16 @@ export default function Menus(){
     })
   },[pathName])
   return(
+    pathName == '/' ? 
+    ''
+    :
     <>
       <div className='line'></div>
       <div className='menu'>
         <div className='menu-item font'><Link href='/'>홈</Link></div>
-        <div className='menu-item font'><Link href={`/about`}>about</Link></div>
-        <div className='menu-item font'><Link href={`/skills`}>skills</Link></div>
-        <div className='menu-item font'><Link href={`/project`}>project</Link></div>
+        <div className='menu-item font'><Link href={`/about`}>ABOUT</Link></div>
+        <div className='menu-item font'><Link href={`/skills`}>SKILLS</Link></div>
+        <div className='menu-item font'><Link href={`/project`}>PROJECT</Link></div>
       </div>
     </>
   )

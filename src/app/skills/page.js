@@ -1,6 +1,6 @@
 
 async function skills(props){
-  console.log(props)
+  // console.log(props)
 
   const frontRes = await fetch(`${process.env.URL}frontIcons`)
   const backRes = await fetch(`${process.env.URL}backIcons`)
@@ -24,7 +24,7 @@ async function skills(props){
             )
           })}
       </div>
-      <h3 className="IconTitle">Back-end</h3>
+      <h3 className="IconTitle font">Back-end</h3>
       <div className="IconsBox">
       {backIcons.map(icon => {
             return(

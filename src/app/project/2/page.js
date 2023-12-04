@@ -15,7 +15,7 @@ export default function page(){
     <div className='projectDetailsBox'>
     <div className='flex'>
         <Back/>
-        <h3 className='projectTitle'>MOOD</h3>
+        <h3 className='projectTitle font'>MOOD</h3>
       </div>
       <div className='projectContent'>
         <div className='viewBox'>
@@ -31,7 +31,7 @@ export default function page(){
           <div className='description'>
             <div className='aboutProject'>
               <h3 className='des-title font'>프로젝트소개</h3>
-              <div className='font'>- 리액트를 활용한 두번째 프로젝트</div>
+              <div className='font'>- 리액트를 활용한 프로젝트</div>
               <div className='font'>- 이상형 월드컵으로 뽑은 영화 장르를 기반으로 영화 추천 사이트 제작</div>
               <div className='font'>- 영화 추천 메인사이트, 즐겨찾기 부분 담당</div>
             </div>

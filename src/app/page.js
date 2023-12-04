@@ -9,7 +9,7 @@ export default function Home() {
     <div className="home">
       <Link className="link" href={`/about`}>
         <div className="imgBox">
-          <img src='/mainImg.jpg' alt="main"></img>
+          <img src='/text.png' alt="main"></img>
         </div>
       </Link>
     </div>
