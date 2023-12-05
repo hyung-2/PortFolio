@@ -1,6 +1,7 @@
 
 import Back from '../../Back'
 import ImgBox from '../../ImgBox'
+import Button from '../../Button'
 
 
 import img0 from '/public/project1_thumbnail.png'
@@ -32,12 +33,12 @@ export default function page(){
         <div className='descriptionBox'>
           <h4 className='project-subtitle font'>23.08.14 ~ 23.08.30 (1인) </h4>
           <div className='description'>
-            <div className='aboutProject'>
+            <div className='aboutProject aniShowDown'>
               <h3 className='des-title font'>프로젝트소개</h3>
               <div className='font'>- 첫번째 프로젝트</div>
               <div className='font'>- SNS 구현</div>
             </div>
-            <div>
+            <div className='mainFunction aniShowDown2'>
               <h3 className='font'>주요 기능</h3>
               <div className='font'>- 회원가입 & 로그인</div>
               <div className='font'>- 게시글 & 댓글 작성,수정,삭제</div>

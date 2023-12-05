@@ -13,7 +13,7 @@ export default function Menus(){
   useEffect(() => {
     const menus = document.querySelectorAll('.menu-item')
     menus.forEach(menu => {
-      if(`/${menu.innerText}` == pathName.toUpperCase()){
+      if(pathName.toUpperCase().includes(menu.innerText)){
         menu.classList.add('pick')
       }else{
         menu.classList.remove('pick')

@@ -30,13 +30,13 @@ export default function page(){
         <div className='descriptionBox'>
           <h4 className='project-subtitle font'>23.11.01 ~ 23.11.20 (4인) </h4>
           <div className='description'>
-            <div className='aboutProject'>
+            <div className='aboutProject aniShowDown'>
               <h3 className='des-title font'>프로젝트소개</h3>
               <div className='font'>- 리액트 네이티브를 활용한 프로젝트</div>
               <div className='font'>- 친구와 일정 공유, 채팅, 알람설정 기능 탑재</div>
               <div className='font'>- 캘린더 부분 담당</div>
             </div>
-            <div>
+            <div className='mainFunction aniShowDown2'>
               <h3 className='font'>주요 기능</h3>
               <div className='font'>- 회원가입 & 로그인</div>
               <div className='font'>- 일정 추가, 수정, 삭제</div>

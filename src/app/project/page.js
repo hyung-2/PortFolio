@@ -9,7 +9,7 @@ function project(props){
 
   return(
     <>
-      <h2 className='pageTitle'>project page</h2>
+      <h2 className='pageTitle font'>project page</h2>
       <div className="project-container">
         <div className='project-box'>
             <div className="projectImgBox">

@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { AiFillLeftCircle } from "react-icons/ai";
 import { AiFillRightCircle } from "react-icons/ai";
@@ -8,20 +8,20 @@ import { AiFillRightCircle } from "react-icons/ai";
 export default function ImgBox({imgs, light, row}){
 
   const [count, setCount] = useState(0)
+
   // console.log(imgs)
+
 
   const goLeft = () => {
     // console.log('goleft')
+
     if(count > 0){
       setCount(count-1)
-      console.log(count)
     }else{
       setCount(4)
-      console.log(count)
     }
-
   }
-
+  
   const goRigth = () => {
     // console.log('goright')
     if(count > 3){
@@ -34,7 +34,16 @@ export default function ImgBox({imgs, light, row}){
   return(
     <div className={row == 'vertical' ? 'viewImgBox2' : 'viewImgBox'}>
       <AiFillLeftCircle className={`arrowBtn leftBtn ${light=='ok' ? 'lightarrow' : ''}` } size='30' onClick={goLeft}/>
-        <Image src={imgs[count]} alt='미리보기'/>
+        <div className='img-container'>
+          <div className='img-box' style={{left: `${row == 'vertical' ? -176 :-400}`*count}}>
+            {/* <Image src={imgs[count]} alt={count}/> */}
+            {imgs.map(img => {
+              return(
+                <img src={img.src} alt='project1'/>
+              )
+            })}
+          </div>
+        </div>
       <AiFillRightCircle className={`arrowBtn rightBtn ${light=='ok' ? 'lightarrow' : ''}`} size='30' onClick={goRigth}/>
     </div>
   )
