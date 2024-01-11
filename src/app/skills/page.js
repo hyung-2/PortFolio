@@ -15,7 +15,7 @@ async function skills(props){
           {frontIcons.map(icon => {
             return(
               <div className="iconBox aniShowDown">
-              <svg width='50' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg width='70' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>{icon.title}</title>
                 <path style={{fill:`${icon.color}`}} d={icon.path} />
               </svg>
@@ -29,7 +29,7 @@ async function skills(props){
       {backIcons.map(icon => {
             return(
               <div className="iconBox aniShowDown2">
-              <svg width='50' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg width='70' role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>{icon.title}</title>
                 <path style={{fill:`${icon.color}`}} d={icon.path} />
               </svg>

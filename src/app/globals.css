@@ -17,7 +17,12 @@
 /* body{
   background-color: #333;
 } */
-
+.space{
+  margin-left: .7rem;
+}
+.bold{
+  font-weight: bold;
+}
 
 /* home layout */
 .box{
@@ -148,26 +153,26 @@
   /* align-items: center;
   justify-content: center; */
   /* height: 100%; */
-  margin: auto 2rem;
+  margin: auto 5rem;
 }
 .photobox{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 15rem; 
 }
 .photobox > img {
   width: 100%; height: 100%;
 }
 .contentBox{
-  margin: auto 3rem;
+  margin: auto 7rem;
   flex: 1;
 }
 /* .introBox{
   margin-bottom: 8rem;
 } */
-.intro{
+.introBox{
   width: 100%;
-  margin: 2rem auto;
-  text-align: center;
+  margin: 2rem 5rem;
+  line-height: 1.5rem;
 }
 .name{
   font-size: 1.3rem;
@@ -214,25 +219,25 @@
   }
 }
 
-
 /* skills page  */
 .IconsBox{
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 2rem;
 }
 .IconTitle{
   margin: .5rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  font-size: 1.5rem;
 }
 .iconBox{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: .5rem;
+  margin: .8rem;
 }
 .iconTitle{
   font-size: .7rem;
@@ -319,6 +324,9 @@
 .project-subtitle{
   margin-top: 0;
 }
+.des-title{
+  margin-bottom: .3rem;
+}
 .badges{
   margin-top: 1rem;
   animation: show 1.5s ease-in-out;
@@ -334,7 +342,10 @@
   position: relative;
   animation: showDown2 1s;
 }
-
+.aniShowDown3{
+  position: relative;
+  animation: showDown3 1s;
+}
 @keyframes showDown{
   from {
     top: -5rem;
@@ -348,6 +359,16 @@
 @keyframes showDown2{
   from {
     top: -7rem;
+    opacity: 0;
+  }
+  to{
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes showDown3{
+  from {
+    top: -9rem;
     opacity: 0;
   }
   to{

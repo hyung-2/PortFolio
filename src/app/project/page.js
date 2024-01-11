@@ -17,6 +17,7 @@ function project(props){
                 <Button 
                   github='https://github.com/hyung-2/project-sns' 
                   more='/project/1'
+                  youtube='https://youtu.be/4GBBUhRyA1o?si=lkKnZ0r6pqYxvlsp'
                 />
               </div>
               <img src='/project1_thumbnail.png' />
@@ -28,6 +29,7 @@ function project(props){
                 <Button 
                   github='https://github.com/Galaxy-104/project2_movie' 
                   more='/project/2'
+                  youtube= ''
                 />
               </div>
               <img src='/project2_thumbnail.png' />
@@ -39,6 +41,7 @@ function project(props){
                 <Button 
                   github='https://github.com/hyung-2/RNproject' 
                   more='/project/3'  
+                  youtube='https://youtu.be/1xJojzia0y8?si=35Y6IdpGdhlxsQbm'
                   align='vertical'
                 />
               </div>

@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 export default function Menus(){
 
   const pathName = usePathname()
-  // console.log('path', pathName)
+  console.log('path', pathName)
 
   // 클릭한 탭메뉴에 효과주기
   useEffect(() => {
