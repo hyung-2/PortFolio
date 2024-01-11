@@ -1,5 +1,7 @@
 'use client'
 
+import Image from "next/image";
+
 import { useState } from "react";
 
 import { AiFillTag } from "react-icons/ai";
@@ -17,7 +19,7 @@ function About(props){
       <h2 className="pageTitle font">About me</h2>
       <div className="about">
         <div className="photobox">
-          <img src="/profile.png"/>
+          <Image src="/profile.png" alt='profile'/>
         </div>
         <div className="contentBox aniShowDown">
           <div className="flex">

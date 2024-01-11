@@ -39,7 +39,7 @@ export default function ImgBox({imgs, light, row}){
             {/* <Image src={imgs[count]} alt={count}/> */}
             {imgs.map((img, id) => {
               return(
-                <img src={img.src} alt='project1' key={id}/>
+                <Image src={img.src} alt='projectImg' key={id}/>
               )
             })}
           </div>

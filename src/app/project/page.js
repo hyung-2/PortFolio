@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 import Button from '../Button'
@@ -20,7 +21,7 @@ function project(props){
                   youtube='https://youtu.be/4GBBUhRyA1o?si=lkKnZ0r6pqYxvlsp'
                 />
               </div>
-              <img src='/project1_thumbnail.png' />
+              <Image src='/project1_thumbnail.png' alt='project1' />
             </div>
         </div>
         <div className='project-box'>
@@ -32,7 +33,7 @@ function project(props){
                   youtube= ''
                 />
               </div>
-              <img src='/project2_thumbnail.png' />
+              <Image src='/project2_thumbnail.png' alt='project2' />
             </div>
         </div>
         <div className='project-box2'>
@@ -45,7 +46,7 @@ function project(props){
                   align='vertical'
                 />
               </div>
-              <img src='/project3_thumbnail.png' />
+              <Image src='/project3_thumbnail.png' alt='project3' />
             </div>
         </div>
         
