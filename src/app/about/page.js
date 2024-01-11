@@ -8,7 +8,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaBirthdayCake } from "react-icons/fa";
 
 
-function about(props){
+function About(props){
   // console.log(props)
   const [typing, setTyping] = useState(false)
 
@@ -48,4 +48,4 @@ function about(props){
   )
 }
 
-export default about
+export default About

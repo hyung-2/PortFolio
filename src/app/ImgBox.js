@@ -37,9 +37,9 @@ export default function ImgBox({imgs, light, row}){
         <div className='img-container'>
           <div className='img-box' style={{left: `${row == 'vertical' ? -176 :-400}`*count}}>
             {/* <Image src={imgs[count]} alt={count}/> */}
-            {imgs.map(img => {
+            {imgs.map((img, id) => {
               return(
-                <img src={img.src} alt='project1'/>
+                <img src={img.src} alt='project1' key={id}/>
               )
             })}
           </div>
