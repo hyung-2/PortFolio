@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 
@@ -39,7 +40,7 @@ export default function ImgBox({imgs, light, row}){
             {/* <Image src={imgs[count]} alt={count}/> */}
             {imgs.map((img, id) => {
               return(
-                <Image src={img.src} alt='projectImg' key={id}/>
+                <Image src={img.src} alt='projectImg' key={id} width={400} height={240}/>
               )
             })}
           </div>

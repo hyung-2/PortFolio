@@ -2,9 +2,14 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
 
 import Button from '../Button'
+import project1 from '../../../public/project1_thumbnail.png'
+import project2 from '../../../public/project2_thumbnail.png'
+import project3 from '../../../public/project3_thumbnail.png'
+
+import { useState } from 'react'
+
 
 function project(props){
 
@@ -21,7 +26,7 @@ function project(props){
                   youtube='https://youtu.be/4GBBUhRyA1o?si=lkKnZ0r6pqYxvlsp'
                 />
               </div>
-              <Image src='/project1_thumbnail.png' alt='project1' />
+              <Image src={project1} alt='project1' />
             </div>
         </div>
         <div className='project-box'>
@@ -33,7 +38,7 @@ function project(props){
                   youtube= ''
                 />
               </div>
-              <Image src='/project2_thumbnail.png' alt='project2' />
+              <Image src={project2} alt='project2' />
             </div>
         </div>
         <div className='project-box2'>
@@ -46,7 +51,7 @@ function project(props){
                   align='vertical'
                 />
               </div>
-              <Image src='/project3_thumbnail.png' alt='project3' />
+              <Image src={project3} alt='project3' />
             </div>
         </div>
         

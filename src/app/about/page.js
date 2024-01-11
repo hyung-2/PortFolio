@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import profile from '../../../public/profile.png'
 
 import { useState } from "react";
 
@@ -19,7 +20,7 @@ function About(props){
       <h2 className="pageTitle font">About me</h2>
       <div className="about">
         <div className="photobox">
-          <Image src="/profile.png" alt='profile'/>
+          <Image src={profile} alt='profile'/>
         </div>
         <div className="contentBox aniShowDown">
           <div className="flex">
