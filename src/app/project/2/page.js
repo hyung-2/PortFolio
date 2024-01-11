@@ -2,11 +2,11 @@ import Back from '../../Back'
 import ImgBox from '../../ImgBox'
 import Badges from '../../Badges'
 
-import img0 from '/public/project2_thumbnail.png'
-import img1 from '/public/project2_1.png'
-import img2 from '/public/project2_2.png'
-import img3 from '/public/project2_3.png'
-import img4 from '/public/project2_4.png'
+import img0 from '../../../../public/project2_thumbnail.png'
+import img1 from '../../../../public/project2_1.png'
+import img2 from '../../../../public/project2_2.png'
+import img3 from '../../../../public/project2_3.png'
+import img4 from '../../../../public/project2_4.png'
 
 export default function page(){
   const imgs = [img0, img1, img2, img3, img4]
