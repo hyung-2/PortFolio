@@ -1,11 +1,10 @@
 
-async function skills(props){
-  // console.log(props)
+import icons from '../../../icons.json'
 
-  const frontRes = await fetch(`${process.env.URL}frontIcons`)
-  const backRes = await fetch(`${process.env.URL}backIcons`)
-  const frontIcons = await frontRes.json()
-  const backIcons = await backRes.json()
+const frontIcons = icons.frontIcons
+const backIcons = icons.backIcons
+
+async function skills(){
 
   return(
     <>
